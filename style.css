@@ -1,99 +1,126 @@
-body{
+body {
 
-margin:0;
+    margin: 0;
 
-background:#08111F;
+    background: #050816;
 
-font-family:Arial, Helvetica, sans-serif;
+    color: white;
 
-color:white;
+    font-family: Arial, Helvetica, sans-serif;
 
-display:flex;
+    display: flex;
 
-justify-content:center;
+    justify-content: center;
 
-align-items:center;
+    align-items: center;
 
-height:100vh;
+    min-height: 100vh;
 
-}
+    overflow: hidden;
 
-.container{
+    /* Simple starry background */
+    background-image:
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(#93C5FD 1px, transparent 1px);
 
-width:700px;
+    background-size:
+        120px 120px,
+        200px 200px,
+        160px 160px;
 
-max-width:90%;
-
-padding:60px;
-
-border-radius:20px;
-
-background:#111827;
-
-box-shadow:0 0 50px rgba(96,165,250,.12);
-
-text-align:center;
-
-}
-
-.logo{
-
-font-weight:normal;
-
-letter-spacing:3px;
-
-font-size:18px;
-
-color:#93C5FD;
-
-margin-bottom:50px;
+    background-position:
+        20px 30px,
+        80px 100px,
+        150px 60px;
 
 }
 
-h1{
 
-font-size:42px;
+.container {
 
-margin-bottom:25px;
+    width: 700px;
 
-}
+    max-width: 90%;
 
-p{
+    padding: 60px;
 
-line-height:1.8;
+    border-radius: 25px;
 
-font-size:18px;
+    /* Card contrast */
+    background: #111827;
 
-color:#D1D5DB;
+    box-shadow:
+        0 0 40px rgba(0,0,0,0.6),
+        0 0 80px rgba(96,165,250,0.15);
 
-}
-
-button{
-
-margin-top:35px;
-
-padding:15px 35px;
-
-font-size:18px;
-
-background:#2563EB;
-
-color:white;
-
-border:none;
-
-border-radius:12px;
-
-cursor:pointer;
-
-transition:.3s;
+    text-align: center;
 
 }
 
-button:hover{
 
-transform:translateY(-3px);
+.logo {
 
-background:#3B82F6;
+    font-weight: normal;
+
+    letter-spacing: 4px;
+
+    font-size: 20px;
+
+    color: #93C5FD;
+
+    margin-bottom: 45px;
+
+}
+
+
+h1 {
+
+    font-size: 42px;
+
+    margin-bottom: 25px;
+
+}
+
+
+p {
+
+    line-height: 1.8;
+
+    font-size: 18px;
+
+    color: #D1D5DB;
+
+}
+
+
+button {
+
+    margin-top: 35px;
+
+    padding: 15px 40px;
+
+    font-size: 18px;
+
+    background: #2563EB;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+button:hover {
+
+    background: #3B82F6;
+
+    transform: translateY(-3px);
 
 }
