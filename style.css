@@ -39,6 +39,8 @@ body {
 
 .container {
 
+    position: relative;
+
     width: 700px;
 
     max-width: 90%;
@@ -58,19 +60,125 @@ body {
 
 }
 
+.kiki-bunny {
+
+    position: absolute;
+
+    width: 220px;
+
+    left: 50%;
+
+    top: -95px;
+
+    transform: translateX(-50%);
+
+    animation: bunnyFloat 3.5s ease-in-out infinite;
+
+    pointer-events: none;
+
+    user-select: none;
+
+    z-index: 100;
+
+}
+
+.hydrangea-left {
+
+    position: absolute;
+
+    width: 145px;
+
+    bottom: -8px;
+
+    left: -8px;
+
+    opacity: 0.85;
+
+    pointer-events: none;
+
+    user-select: none;
+
+    z-index: 5;
+
+}
+
+.hydrangea-right {
+
+    position: absolute;
+
+    width: 145px;
+
+    bottom: -8px;
+
+    right: -8px;
+
+    transform: scaleX(-1);
+
+    opacity: 0.85;
+
+    pointer-events: none;
+
+    user-select: none;
+
+    z-index: 5;
+
+}
+
+.lily-left {
+
+    position: absolute;
+
+    width: 110px;
+
+    left: -55px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    opacity: 0.95;
+
+    pointer-events: none;
+
+    user-select: none;
+
+    z-index: 3;
+
+}
+
+.lily-right {
+
+    position: absolute;
+
+    width: 110px;
+
+    right: -55px;
+
+    top: 50%;
+
+    transform: translateY(-50%) scaleX(-1);
+
+    opacity: 0.95;
+
+    pointer-events: none;
+
+    user-select: none;
+
+    z-index: 3;
+}
 
 .logo {
 
-    font-weight: normal;
+    font-family: 'Baloo 2', cursive;
 
-    letter-spacing: 4px;
+    font-weight: 700;
 
-    font-size: 20px;
+    letter-spacing: 2px;
+
+    font-size: 32px;
 
     color: #93C5FD;
-
-    margin-bottom: 45px;
-
+    
 }
 
 
@@ -122,5 +230,21 @@ button:hover {
     background: #3B82F6;
 
     transform: translateY(-3px);
+
+}
+
+@keyframes bunnyFloat {
+
+    0% {
+        transform: translateX(-50%) translateY(0px);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(0px);
+    }
 
 }
