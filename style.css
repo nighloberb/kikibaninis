@@ -82,89 +82,93 @@ body {
 
 }
 
-.hydrangea-left {
+.kuromi {
 
     position: absolute;
 
-    width: 145px;
+    width: 95px;
 
-    bottom: -8px;
+    top: -12px;
 
-    left: -8px;
+    left: -12px;
 
-    opacity: 0.85;
+    transform: rotate(-15deg);
+
+    filter: drop-shadow(0 6px 10px rgba(0,0,0,.25));
 
     pointer-events: none;
 
     user-select: none;
 
-    z-index: 5;
+    z-index: 8;
 
+}
+
+.sukuna-kiss {
+
+    position: absolute;
+
+    width: 85px;
+
+    top: 16px;
+
+    right: 16px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 0 18px rgba(0,0,0,.35);
+
+    transform: rotate(8deg);
+
+    pointer-events: none;
+
+    z-index: 6;
+
+}
+
+.hydrangea-left,
+.hydrangea-right {
+    position: absolute;
+    width: 130px;
+    bottom: -8px;
+    opacity: 0.85;
+    pointer-events: none;
+    user-select: none;
+    z-index: 4;
+}
+
+.hydrangea-left {
+    left: -8px;
 }
 
 .hydrangea-right {
+    right: -8px;
+    transform: scaleX(-1);
+}
 
+.lily-bottom-left,
+.lily-bottom-right {
     position: absolute;
-
-    width: 145px;
-
+    width: 155px;
     bottom: -8px;
 
+    pointer-events: none;
+    user-select: none;
+    z-index: 3;
+}
+
+.lily-bottom-left {
+    left: -8px;
+
+    /* Rotates the vertical branch onto the bottom edge */
+    transform: rotate(-90deg) scaleX(-1);
+}
+
+.lily-bottom-right {
     right: -8px;
 
-    transform: scaleX(-1);
-
-    opacity: 0.85;
-
-    pointer-events: none;
-
-    user-select: none;
-
-    z-index: 5;
-
-}
-
-.lily-left {
-
-    position: absolute;
-
-    width: 110px;
-
-    left: -55px;
-
-    top: 50%;
-
-    transform: translateY(-50%) scaleX(-1);
-
-    opacity: 0.95;
-
-    pointer-events: none;
-
-    user-select: none;
-
-    z-index: 3;
-
-}
-
-.lily-right {
-
-    position: absolute;
-
-    width: 110px;
-
-    right: -55px;
-
-    top: 50%;
-
-    transform: translateY(-50%);
-
-    opacity: 0.95;
-
-    pointer-events: none;
-
-    user-select: none;
-
-    z-index: 3;
+    /* Mirrored version for the opposite corner */
+    transform: rotate(90deg) scaleX(-1);
 }
 
 .logo {
