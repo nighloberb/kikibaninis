@@ -108,7 +108,7 @@ body {
 
     position: absolute;
 
-    width: 85px;
+    width: 130px;
 
     top: 16px;
 
@@ -158,17 +158,29 @@ body {
 }
 
 .lily-bottom-left {
+
+    position: absolute;
+
+    width: 135px;
+
+    bottom: -8px;
+
     left: -8px;
 
-    /* Rotates the vertical branch onto the bottom edge */
-    transform: rotate(-90deg) scaleX(-1);
 }
 
 .lily-bottom-right {
+
+    position: absolute;
+
+    width: 135px;
+
+    bottom: -8px;
+
     right: -8px;
 
-    /* Mirrored version for the opposite corner */
-    transform: rotate(90deg) scaleX(-1);
+    transform: scaleX(-1);
+
 }
 
 .logo {
